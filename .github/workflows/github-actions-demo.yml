@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - run: echo "🎉 The job was automatically triggered by a ${{ secrets.AWS_ACCESS_KEY_ID }} event."
     - name: Checkout
       uses: actions/checkout@v2
 
